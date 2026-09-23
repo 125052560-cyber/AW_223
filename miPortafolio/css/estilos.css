@@ -1,0 +1,87 @@
+/* Reset de márgenes y paddings */
+*{
+    box-sizing: border-box;
+}
+/* Estilos generales */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #0A3D62; /* Azul profundo */
+    color: #F5F5F5; /* Blanco suave */
+}
+/* Estilos para el encabezado y la navegación */
+header{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1E5F74; /* Azul medio */
+    color: #F5F5F5;
+}
+/* Estilos para el título y el subtítulo */
+header h1{
+    margin: 0;
+    font-size: 40px;
+}
+/* Estilos para el párrafo del encabezado */
+header p{
+    margin-top: 10px;
+    font-size: 30px;
+    font-style: italic;
+}
+/* Estilos para la barra de navegación */
+nav{
+    background-color: #3C8DAD; /* Azul claro */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+    border-bottom: 2px solid #1E5F74; /* Azul medio */
+}
+/*  Estilos para los enlaces de navegación */
+nav a{
+    color: #F5F5F5; /* Blanco suave */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+/* Estilos para los enlaces de navegación al pasar el mouse */
+nav a:hover{
+    background-color: #0F4C75; /* Azul intenso */
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+/* Estilos para la sección principal */
+main{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #0A3D62; /* Azul profundo */
+}
+/*styles para las secciones */
+section{
+    border-bottom: 40px solid #0A3D62;/* Azul profundo */
+    padding: 60px 40px;
+    background-color: #1E5F74; /* Azul medio */
+    border-radius: 10px;
+}
+/* Estilos para los títulos de las secciones */
+section h2{
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 30;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #F5F5F5; /* Blanco suave */
+}
+/* seccion de inicio*/
+section.seccion-inicio{
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}

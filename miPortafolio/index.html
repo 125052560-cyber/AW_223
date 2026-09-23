@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 
@@ -14,14 +15,14 @@
     <p> Bienvenido a mi sitio web personal </p>
     </header>
     <nav>
-        <a> href="INICIO"</a>
-        <a> href="Sobre mi"</a>
-        <a> href="Proyectos"</a>
-        <a> href="Habilidades"</a>
-        <a> href="Contacto"</a>
+        <a href="INICIO">INICIO</a>
+        <a href="Sobre mi">Sobre mi</a>
+        <a href="Proyectos">Proyectos</a>
+        <a href="Habilidades">Habilidades</a>
+        <a href="Contacto">Contacto</a>
         </nav>
         <main>
-           <section>
+           <section class="seccion-inicio">
             <dlv>
              <h2> Hola soy leo </h2>
              <p> Soy estudiante de TIID y estoy aprendiendo a programar </p>
@@ -63,16 +64,16 @@
                     <h2> CONTACTAME </h2>
                     <form action ="">
                         <div>
-                            <label for ="Nombre" >  </label>
-                            <input> type ="text">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="nombre" type="text">
                         </div>
                             <div>
-                            <label for ="" >Correo</label>
-                            <input> type ="text">
+                            <label for="correo">Correo</label>
+                            <input id="correo" name="correo" type="email">
                         </div>
                          <div>
-                            <label for ="Nombre" >  </label>
-                            <textarea rows ="5"> </textarea>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
                         </div>
                     </form>
 
