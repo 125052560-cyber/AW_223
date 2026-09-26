@@ -1,94 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head> 
 
-
 <body>
-<!-- aqui esta el encabezado-->   
-  <header> 
-    <h1>Mi Portafolio</h1>
-    <p> Bienvenido a mi sitio web personal </p>
+    <!-- Encabezado -->
+    <header> 
+        <h1>Mi Portafolio</h1>
+        <p>Bienvenido a mi sitio web personal</p>
     </header>
+
+    <!-- Navegación -->
     <nav>
-        <a href="INICIO">INICIO</a>
-        <a href="Sobre mi">Sobre mi</a>
-        <a href="Proyectos">Proyectos</a>
-        <a href="Habilidades">Habilidades</a>
-        <a href="Contacto">Contacto</a>
-        </nav>
-        <main>
-           <section class="seccion-inicio">
+        <a href="#inicio">INICIO</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+        <!-- Sección de inicio -->
+        <section id="inicio" class="seccion-inicio">
             <div class="seccion-inicio-contenido">
-             <h2> Hola soy leo </h2>
-             <p> Soy estudiante de TIID y estoy aprendiendo a programar </p>
-             <a href=""class="boton" > ver mis proyectos  </a>
+                <h2>Hola, soy Leo</h2>
+                <p>Soy estudiante de TIID y estoy aprendiendo a programar</p>
+                <a href="#proyectos" class="boton">Ver mis proyectos</a>
             </div>
-           </section>
-        <!--         SECCION SOBRE MI        -->
-                 <section>
-                    <h2>  Sobre mi  </h2>
-                    <div class="sobre-mi-contenido">
-                        <img src="" alt ="">
-                        <div>
-                            <p>Algo sobre mi imgen</p>
-                            <p> En esta practica estoy aprendiendo HTML & CSS </p>
-                        </div>
-                   </div>
-                 </section>
-                 <section class="contenedor-proyectos">  
-                    <h2> Mis Proyectos </h2>
-                    <div>   
-                        <article class="proyecto">
-                            <h3> Sistema de algo 1</h3>
-                            <p> Descripcion del sistema </p>
-                            <a href=""> Ver Proyecto </a>
-                        </article>
-                        <article class="proyecto">
-                            <h3> Sistema de algo 2</h3>
-                            <p> Descripcion del sistema </p>
-                            <a href=""> Ver Proyecto </a>
-                        </article>
-                    </div>
-                 </section>
-                 <section>  
-                    <h2> Mis Habilidades </h2>
-                    <ul class="lista-habilidades">
-                        <li>JAVA</li>
-                        <li>SCRATCH</li>
-                        <li>PSint</li>
-                        <li>Packet Tracer</li>
-                        <li>MySQL</li>
-                    </ul>
-                 </section>
-                 <section>
-                    <h2> CONTACTAME </h2>
-                    <form action ="">
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input id="nombre" name="nombre" type="text">
-                        </div>
-                            <div>
-                            <label for="correo">Correo</label>
-                            <input id="correo" name="correo" type="email">
-                        </div>
-                         <div>
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-                        </div>
-                    </form>
+        </section>
 
+        <!-- Sección sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="sobre-mi-contenido">
+                <img src="" alt="Imagen personal">
+                <div>
+                    <p>Algo sobre mi imagen</p>
+                    <p>En esta práctica estoy aprendiendo HTML & CSS</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Sección de proyectos -->
+        <section id="proyectos" class="contenedor-proyectos">  
+            <h2>Mis Proyectos</h2>
+            <div>   
+                <article class="proyecto">
+                    <h3>Sistema de algo 1</h3>
+                    <p>Descripción del sistema</p>
+                    <a href="">Ver Proyecto</a>
+                </article>
+                <article class="proyecto">
+                    <h3>Sistema de algo 2</h3>
+                    <p>Descripción del sistema</p>
+                    <a href="">Ver Proyecto</a>
+                </article>
+            </div>
+        </section>
 
+        <!-- Sección de habilidades -->
+        <section id="habilidades">
+            <h2>Mis Habilidades</h2>
+            <ul class="lista-habilidades">
+                <li>JAVA</li>
+                <li>SCRATCH</li>
+                <li>PSint</li>
+                <li>Packet Tracer</li>
+                <li>MySQL</li>
+            </ul>
+        </section>
 
-                 </section>
-         </main>
-         <footer>
-            <p> 2026 Mi Portafolio Web.Practica de Programacion. Todos los derechos reservados </p>
-         </footer>
+        <!-- Sección de contacto -->
+        <section id="contacto">
+            <h2>Contáctame</h2>
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Mi Portafolio</p>
+        <p>Práctica de Programación Web</p>
+    </footer>
 </body>
-</html> 
+</html>

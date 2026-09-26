@@ -1,75 +1,73 @@
-/* Reset de márgenes y paddings */
-*{
+* {
     box-sizing: border-box;
 }
-/* Estilos generales */
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #0A3D62; /* Azul profundo */
-    color: #F5F5F5; /* Blanco suave */
-}
-/* Estilos para el encabezado y la navegación */
-header{
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #1E5F74; /* Azul medio */
+    background-color: #0A3D62;
     color: #F5F5F5;
 }
-/* Estilos para el título y el subtítulo */
-header h1{
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1E5F74;
+    color: #F5F5F5;
+}
+
+header h1 {
     margin: 0;
     font-size: 40px;
 }
-/* Estilos para el párrafo del encabezado */
-header p{
+
+header p {
     margin-top: 10px;
     font-size: 30px;
     font-style: italic;
     justify-content: center;
 }
-/* Estilos para la barra de navegación */
-nav{
-    background-color: #3C8DAD; /* Azul claro */
+
+nav {
+    background-color: #3C8DAD;
     display: flex;
     justify-content: center;
     padding: 10px;
     gap: 20px;
-    border-bottom: 2px solid #1E5F74; /* Azul medio */
+    border-bottom: 2px solid #1E5F74;
 }
-/*  Estilos para los enlaces de navegación */
-nav a{
-    color: #F5F5F5; /* Blanco suave */
+
+nav a {
+    color: #F5F5F5;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
-    justify-content: center;
 }
-/* Estilos para los enlaces de navegación al pasar el mouse */
-nav a:hover{
-    background-color: #0F4C75; /* Azul intenso */
+
+nav a:hover {
+    background-color: #0F4C75;
     color: #FFFFFF;
     text-decoration: underline;
     justify-content: center;
 }
-/* Estilos para la sección principal */
-main{
+
+main {
     max-width: 1200px;
     margin: 0px auto;
     padding: 20px;
-    background-color: #0A3D62; /* Azul profundo */
-    justify-content: center;
+    background-color: #0A3D62;
 }
 /*styles para las secciones */
 section{
     justify-content: center;
     border-bottom: 40px solid #0A3D62;/* Azul profundo */
     padding: 60px 40px;
-    background-color: #1E5F74; /* Azul medio */
+    background-color: #1E5F74;
     border-radius: 10px;
 }
 /* Estilos para los títulos de las secciones */
@@ -79,34 +77,18 @@ section h2{
     margin-top: 30;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #F5F5F5; /* Blanco suave */
+    color: #F5F5F5;
 }
 /* seccion de inicio*/
-section.seccion-inicio{
-
+section.seccion-inicio {
     min-height: 50vh;
     display: flex;
     justify-content: center;
     text-align: center;
     padding-top: 50px;
 }
-/* Estilos para los párrafos de las secciones */
-section-contenido{
-    max-width: 700px;
-    justify-content: center;
-}
-section-contenido h2{
-    font-size: 42px;
-    margin-bottom: 15px;
-    justify-content: center;
-}
-.section-contenido p{
-    margin-bottom: 30px;
-    font-size: 20px;
-    justify-content: center;
-}
-/*boton*/
-.boton{
+
+.boton {
     display: inline-block;
     padding: 10px 20px;
     background-color: #3C8DAD; /* Azul claro */
@@ -120,11 +102,13 @@ section-contenido h2{
     justify-content: center;
 
 }
-.boton:hover{
-    background-color: #0ab3c3; /* Azul intenso */
+
+.boton:hover {
+    background-color: #0ab3c3;
     color: #FFFFFF;
 }
-.sobre-mi-contenido{
+
+.sobre-mi-contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,18 +116,21 @@ section-contenido h2{
     max-width: 800px;
     gap: 20px;
 }
-.sobre-mi-contenido img{
+
+.sobre-mi-contenido img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    background-color: #0A3D62; /* Azul profundo */
-    border: 5px solid #3C8DAD; /* Azul claro */
+    background-color: #0A3D62;
+    border: 5px solid #3C8DAD;
 }
-.sobre-mi-contenido p{
+
+.sobre-mi-contenido p {
     font-size: 18px;
 }
-.lista-habilidades{
+
+.lista-habilidades {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -151,42 +138,126 @@ section-contenido h2{
     padding: 20px;
     list-style-type: none;
 }
-.lista-habilidades li{
-    background-color: #3C8DAD; /* Azul claro */
-    color: #F5F5F5; /* Blanco suave */
+
+.lista-habilidades li {
+    background-color: #3C8DAD;
+    color: #F5F5F5;
     padding: 12px 20px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    border: 2px solid #0A3D62; /* Azul profundo */
+    border: 2px solid #0A3D62;
 }
-/*seccion proyectos*/
-.contenedor-proyectos{
+
+.contenedor-proyectos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
-.proyecto{
+
+.proyecto {
     flex: 1;
-    background-color: #0f98ce; /* Azul claro */
-    color: #F5F5F5; /* Blanco suave */
+    background-color: #0f98ce;
+    color: #F5F5F5;
     padding: 25px;
-    border: 10px solid #06a6c7; /* Azul profundo */
+    border: 10px solid #06a6c7;
     border-radius: 15px;
     min-width: 300px;
     text-align: center;
 }
-.proyecto h3{
+
+.proyecto h3 {
     font-size: 22px;
     margin-bottom: 10px;
 }
-.proyecto a{
+
+.proyecto a {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 15px;
-    background-color: #3C8DAD; /* Azul claro */
-    color: #F5F5F5; /* Blanco suave */
+    background-color: #3C8DAD;
+    color: #F5F5F5;
     text-decoration: none;
     border-radius: 5px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3C8DAD;
+    color: #F5F5F5;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0ab3c3;
+}
+
+footer {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .inicio-contenido h2 {
+        font-size: 32px;
+    }
+
+    .sobre-mi-contenido,
+    .contenedor-proyectos {
+        flex-direction: column;
+    }
 }
