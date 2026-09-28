@@ -11,7 +11,10 @@
     <!-- Encabezado -->
     <header> 
         <h1>Mi Portafolio</h1>
-        <p>Bienvenido a mi sitio web personal</p>
+        <!-- Agregado id para cambiar el texto desde JS -->
+        <p id="mensaje-bienvenida">Bienvenido a mi sitio web personal</p>
+        <!-- Agregado botón para el punto A -->
+        <button id="btn-cambiar-texto">Cambiar Mensaje</button>
     </header>
 
     <!-- Navegación -->
@@ -65,19 +68,24 @@
         <!-- Sección de habilidades -->
         <section id="habilidades">
             <h2>Mis Habilidades</h2>
+            <!-- Agregada clase 'caja-habilidad' a cada elemento -->
             <ul class="lista-habilidades">
-                <li>JAVA</li>
-                <li>SCRATCH</li>
-                <li>PSint</li>
-                <li>Packet Tracer</li>
-                <li>MySQL</li>
+                <li class="caja-habilidad">JAVA</li>
+                <li class="caja-habilidad">SCRATCH</li>
+                <li class="caja-habilidad">PSint</li>
+                <li class="caja-habilidad">Packet Tracer</li>
+                <li class="caja-habilidad">MySQL</li>
             </ul>
+            <!-- Agregados los 2 botones requeridos para el punto B -->
+            <button id="btn-cambiar-color">Cambiar color</button>
+            <button id="btn-cambiar-fuente">Cambiar tipo de letra</button>
         </section>
 
         <!-- Sección de contacto -->
         <section id="contacto">
             <h2>Contáctame</h2>
-            <form>
+            <!-- Agregado id 'form-contacto' para el punto C -->
+            <form id="form-contacto">
                 <div class="campo">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
@@ -85,7 +93,8 @@
 
                 <div class="campo">
                     <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                    <!-- Cambiado el ID a 'correo' para coincidir con tu JS -->
+                    <input type="email" id="correo" name="email" placeholder="ejemplo@correo.com">
                 </div>
 
                 <div class="campo">
@@ -100,8 +109,11 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>© 2026 Mi Portafolio</p>
+        <p>©️ 2026 Mi Portafolio</p>
         <p>Práctica de Programación Web</p>
     </footer>
+
+    <!-- Vinculación del archivo JS independiente -->
+    <script src="./js/script.js"></script>
 </body>
 </html>

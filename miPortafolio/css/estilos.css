@@ -260,4 +260,8 @@ footer p {
     .contenedor-proyectos {
         flex-direction: column;
     }
+    /* Ajustes para la sección de contacto */
+    #contacto {
+        padding: 40px 20px;
+    }
 }
