@@ -82,35 +82,35 @@
             <button id="btn-cambiar-fuente">Cambiar tipo de letra</button>
         </section>
 
-        <!-- Sección de contacto -->
+        <!-- Seccion de contacto -->
         <section id="contacto">
-            <h2>Contáctame</h2>
+            <h2>Contactame</h2>
             <!-- Agregado id 'form-contacto' para el punto C -->
-            <form id="form-contacto">
-                <div class="campo">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
-                </div>
+<form id="form-contacto" action="guardar_mensaje.php" method="post">
+  <div class="campo">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="txtnombre" placeholder="Escribe tu nombre" required>
+  </div>
 
-                <div class="campo">
-                    <label for="email">Correo electrónico</label>
-                    <!-- Cambiado el ID a 'correo' para coincidir con tu JS -->
-                    <input type="email" id="correo" name="email" placeholder="ejemplo@correo.com">
-                </div>
+  <div class="campo">
+    <label for="correo">Correo electronico</label>
+    <input type="email" id="correo" name="txtcorreo" placeholder="ejemplo@correo.com" required>
+  </div>
 
-                <div class="campo">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
-                </div>
+  <div class="campo">
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="txtmensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+  </div>
 
-                <button type="submit">Enviar mensaje</button>
-            </form>
+  <button type="submit">Enviar mensaje</button>
+</form>
+
         </section>
     </main>
 
     <!-- Pie de página -->
     <footer>
-        <p>©️ 2026 Mi Portafolio</p>
+        <p> 2026 Mi Portafolio</p>
         <p>Práctica de Programación Web</p>
     </footer>
 
