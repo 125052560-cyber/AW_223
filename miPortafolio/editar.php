@@ -54,6 +54,7 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     label {

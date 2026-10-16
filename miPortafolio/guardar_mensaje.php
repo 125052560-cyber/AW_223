@@ -10,8 +10,8 @@ $stmt = $conexion->prepare($sqlInsert);
 $stmt->bind_param("sss", $nombre, $correo, $mensaje);
 
 if ($stmt->execute()) {
-    echo "Mensaje guardado correctamente";
+    header("Location:index.php?estadophp=exitoso");
 } else {
-    echo "Error al intentar guardar: ";
+    header("Location:index.php?estado=exitoso");
 }
 

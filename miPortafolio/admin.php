@@ -114,22 +114,41 @@
 
   <section>
     <table>
-      <thead>
+     <thead>
+  <tr>
+    <th>Nombre</th>
+    <th>Correo</th>
+    <th>Mensaje</th>
+    <th>Fecha</th>
+    <th>Opciones</th>
+  </tr>
+</thead>
+<tbody>
+  <?php
+  require "consulta_mensajes.php";
+  $rsMensajes = consultaMensajes();
+  while($arrMensaje = mysqli_fetch_array($rsMensajes)){
+    echo "<tr>
+            <td>".$arrMensaje['nombre']."</td>
+            <td>".$arrMensaje['correo']."</td>
+            <td>".$arrMensaje['mensaje']."</td>
+            <td>".$arrMensaje['timeStaps']."</td>
+            <td>
+              <a href='editar.php?id=".$arrMensaje['id']."'>Editar</a>
+              <a href='borrar.php?id=".$arrMensaje['id']."'>Borrar</a>
+            </td>
+          </tr>";
+  }
+  ?>
+</tbody>
+
         <tr>
-          <th>Nombre</th>
-          <th>Correo</th>
-          <th>Mensaje</th>
-          <th>Opciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
+          <td>1</td>
           <td>Ana</td>
           <td>ana@example.com</td>
           <td>Hola, me interesa tu portafolio.</td>
           <td>
-            <a href="editar.php?id=1">Editar</a>
-            <a href="borrar.php?id=1">Borrar</a>
+            <a href="editar.php">Editar</a>
           </td>
         </tr>
       </tbody>
