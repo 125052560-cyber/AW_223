@@ -1,3 +1,11 @@
+<?php
+include("conexion.php");
+$id = $_GET['id'];
+$delete = $conexion->prepare("DELETE FROM mensajes WHERE id=?");
+$delete->bind_param("i", $id);
+$delete->execute();
+echo "<script>alert('Mensaje eliminado correctamente'); window.location='admin.php';</script>";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
